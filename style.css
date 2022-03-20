@@ -1,0 +1,152 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background-image: url('images/background.jpg');         
+	background-repeat: no-repeat;
+	background-size: 3920px;
+}
+.select{
+	width: 330px;
+	height: 330px;
+	background-color: aqua;
+	z-index: 3;
+	border: 1px solid gray;
+	text-align: center;
+	position: relative;
+}
+.select .computer{
+	font-size: 30px;
+	padding: 10px 15px;
+	border-radius: 20px;
+	background-color: transparent;
+	border: 2px dashed blue;
+	box-shadow: -5px 10px black;
+  position: absolute;
+  left: 45px;
+  top: 60px;
+}
+.select .computer:active{
+  box-shadow: none;
+  top: 65px;
+}
+.select .player:active{
+	box-shadow: none;
+	top: 185px;
+}
+.select .player{
+	font-size: 30px;
+	padding: 10px 15px;
+	border-radius: 20px;
+	background-color: transparent;
+	border: 2px dashed  blue;
+	box-shadow: -5px 10px black;
+	position: absolute;
+	left: 0;
+	top: 180px;
+	left: 38px;
+}
+.game{
+	position: relative;
+	text-align: center;
+	display: none;
+	z-index: 5;
+	transition: 2s ease;
+}
+.game img{
+	width: 80px;
+	margin-top: 50px;
+	margin-left: 138px;
+	display: none;
+}
+.back i{
+	font-size: 50px;
+	text-align: center;
+	cursor: pointer;
+	position: absolute;
+	top: 70px;
+	color: red;
+	right: 35px;
+	display: none;
+}
+.game h1{
+	background-color: green;
+	font-size: 30px;
+	text-align: center;
+	display: block;
+}
+.tic-tac{
+	width: 600px;
+	height: 600px;
+	background: yellow;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.tic-tac .box{
+	margin-top: 10px;
+	margin-left: 15px;
+	width: 180px;
+	height: 180px;
+	transition: 2s ease;
+	background: aqua;
+	display: flex;
+	align-items: center;
+	font-size: 100px;
+	justify-content: center;
+}
+.tic-tac .box:hover{
+	box-shadow: 5px 5px 5px black,
+							5px -5px 5px black,
+							-5px -5px 5px black,
+							-5px 5px 5px black;
+}
+.icons{
+	left: 10%;
+	position: absolute;
+	bottom: 120px;
+	display: flex;
+	align-items: center;
+}
+.icons i{
+	margin-left: 45px;
+	font-size: 50px;
+	color: blue;
+}
+
+@media(max-width:1500px){
+	.tic-tac{
+	width: 350px;
+	height: 330px;
+	background: gray;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	}
+	.tic-tac .box{
+		width: 100px;
+		height: 100px;
+		margin-left: 12px;
+		margin-top: 5px;
+	}
+	.icons{
+	left: 34%;
+	position: absolute;
+	bottom: 620px;
+	display: flex;
+	align-items: center;
+}
+.icons i{
+	margin-left: 45px;
+	font-size: 50px;
+	color: blue;
+}
+	
+}
