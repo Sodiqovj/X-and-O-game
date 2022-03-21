@@ -9,7 +9,7 @@ body{
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
-	background-image: url('images/background.jpg');         
+	background-image: url('background.jpg');         
 	background-repeat: no-repeat;
 	background-size: 3920px;
 }
